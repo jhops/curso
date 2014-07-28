@@ -1,0 +1,77 @@
+Practica
+
+- Que permisologia tiene los siguientes archivos
+rwxrwx--- chmod 777
+  
+--------- 
+rw-rw---- 
+r-xr-xr-x 
+---rw-r-x 
+--x--x--x 
+
+
+- Ejecuten la búsqueda con grep buscando cunaguaro y guarde la salida en un archivo llamado
+firefox.txt
+
+de la siguiente manera: ps -A | grep cunaguaro > firefox.txt
+
+-Cuanto pesa tu /home/ y cuanto pesa /etc
+
+ls -l -h /home /etc
+
+- Se requiere guardar un archivo dentro de la configuración de la memoria del computador dentro
+de un archivo llamado memoria.txt
+
+De la siguiente manera:  cat /proc/meminfo >> memoria.txt
+
+
+-Se requiere guardar toda la configuración de la versión del kernel en un archivo llamado kernel.txt
+uname --all > kernel.txt
+
+- Como matamos un proceso del computador
+
+ejecutamos el comando kill y le damos como argumento el numero 9 y luego el PID del proceso que queremos matar
+
+- Que hace el respectivo comando $cat toto > toto2
+el comando cat redirecciona la salida al archivo toto2 añadiendo asi el contenido de toto en toto2.
+
+- Como puedo visualizar las particiones del disco duro
+
+puedo visulaizarlas ejecutando el comando fdisk o tambien el comando df.
+fdisk -l
+
+df -h
+
+- Cree una carpeta con tu nombre
+mkdir jhosep
+ 
+- Dentro de la carpeta, creamos tres archivos de nombre c1 c2 c3 
+touch c1 c2 c3
+
+- Guardamos en el c1 su nombre completo
+nano c1
+jhosep ramirez
+
+- Guardamos el c3 el correo electrónico
+
+nano c3
+ramirezjho@fundacite-anz.gob.ve
+
+- Describa a continuación la función de los siguientes directorios
+
+/bin: almencan aquellos archivos binarios, ejecutables  de aplicaciones y servicios del sistema, muchos usados por el usuario.   
+
+/home/: el directorio almacena la configuracion de las cuentas de usuarios del sistema GNU/linux asi como tambien los directorios de cada unos de los usuarios 
+
+/media: este directorio contiene aquellos dispositivos extraibles y de almacenamiento secundarios que estan montados en el sistema linux. Ejemplo
+memorias SD, dispositivos USB, particiones.
+
+/var: alamancena directorios y archivos de configuracion para algunos servicios del sistema operativo y otros instaldos por el usuario. 
+
+/: almancena todos los directorios del sistema de archivos de Linux, / simboliza el directorio root.	
+
+/sbin: almenacena archivos esenciales para la ejecucion de herramientas (comandos) en el sistema. Como ejemplo herramientas para crear sistemas de archivos
+etiquetas de discos, administrar discos, procesos.   
+
+/boot: Almacena directorios y archivos que contienen informacion para el arranque del sistema operativo y otros sistemas. Archivos como el vmlinuz, 
+y el gestor de arranque bug para inciar el sistema segundos despues del encender el computador. 
